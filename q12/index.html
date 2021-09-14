@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="container">
+            <nav>
+                <h1>TO THE NEW</h1>
+                <div>
+                    <a href="#">Home</a>
+                    <a href="#">Quick Help</a>
+                </div>
+            </nav>
+            <div class="bug-report">
+                <h2>Bug Report</h2>
+                <form action="#">
+                    <div class="form-container">
+                        <label for="title">Title:*</label>
+                    <input type="text" name="title" id="title">
+                    <label for="desc">Description:*</label>
+                    <textarea name="desc" id="desc" cols="30" rows="4"></textarea>
+                    <label for="Operation-system">Operationg system:</label>
+                    <select name="Operating-system" id="Operating-system">
+                        <option value="Windows">Windows XP</option>
+                        <option value="Windows">Windows 7</option>
+                        <option value="Windows">Windows 10</option>
+                    </select>
+                    <label for="Products">Products:*</label>
+                    <select name="Products" id="Products">
+                        <option value="product1">Product 1</option>
+                        <option value="product2">Product 2</option>
+                        <option value="product3">Product 3</option>
+                    </select>
+                    <label for="version">Version:*</label>
+                    <input type="text" name="version" id="version">
+                    <label for="license">License:</label>
+                    <input type="radio" name="license" id="free">
+                    <label for="free" class="license">Free</label>
+                    <input type="radio" name="license" id="business">
+                    <label for="business"  class="license">Business</label>
+                    <label for="security">Security:</label>
+                    <select name="security" id="security">
+                        <option value="Critical">Critical</option>
+                    </select>
+                    <label for="attach">Attachments:</label>
+                    <input type="file" name="attach" id="attach">
+                    <label class="file-label"  for="attach"><span>No file selected</span>
+                        Choose a file
+                    </label>
+                    </div>
+                    <div class="send-btn">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+</html>
