@@ -1,0 +1,62 @@
+/* font */
+.Font-properties{
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* background */
+.bg-properties{
+    background-color: #0fa3bd;
+    color: #fff;
+    background-image: url('img1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+}
+
+/* pseudo */
+.pseudo-selector::before{
+    content: "START OF";
+    color: #0fa3bd;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.pseudo-selector::after{
+    content: "END";
+    color: #0fa3bd;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.pseudo-selector ul li:first-child{
+    color: blueviolet;
+    font-size: 16px;
+}
+
+.pseudo-selector ul li:last-child{
+    color: #0fa3bd;
+}
+
+/* combinators */
+.combinators > p{
+    color: #096b3d;
+}
+
+.combinators p + h3{
+    color: chocolate;
+}
+
+.combinators h3 ~ p{
+    color: darkred;
+}
+
+/* attribute selector */
+input[type="text"]{
+    background-color: gray;
+    border: 2px solid darkgrey;
+    padding: 5px;
+}
